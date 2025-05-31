@@ -1,0 +1,12 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import './styles/variables';
+
+body {
+  background-color: #000;
+  color: #faf7f7;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
