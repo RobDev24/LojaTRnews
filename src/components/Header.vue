@@ -1,47 +1,30 @@
 <template>
     <div class="header">
         <img src="@/assets/IMG_4.jpg">
-            <div class="h-menu">
-                <b-button class="menu" to="/" pill variant="danger">Inicio</b-button>
-              <b-button class="menu" to="/woman" pill variant="outline-secondary">Feminino</b-button> 
-              <b-button class="menu" to="/man" pill variant="outline-secondary">Masculino</b-button>
-              <b-button class="menu" to="/juvenile" pill variant="outline-secondary">Infanto/Juvenil</b-button>
-              <b-button class="menu" to="/accessories" pill variant="outline-secondary">Acessórios</b-button>
-              <b-button class="menu" to="/about" pill variant="outline-secondary">About</b-button>     
-                <search/>
-            </div>
-        <nav> <b-button  class="cart-button" to="/cart">
-            
-    🛒
-    <!--<span v-if="cartItemCount > 0" class="cart-count">{{ cartItemCount }}</span>-->
-  </b-button></nav>
-        
+            <search/>
+            <button-menu-vue/>
+               
     </div>
 </template>
 
 <script>
 
 import Search from './Search.vue';
+import ButtonMenuVue from './ButtonMenu.vue'
 
 export default{
     name:'HeaDer',
     components:{
-        Search
+        Search,
+        ButtonMenuVue
     }
 }
-
-
-
-
-
 
 </script>
 
 <style scoped>
 .header{
-    
     position: fixed;
-     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,8 +65,8 @@ img{
   float:right;
   margin-right: 20px;
   margin-top: 15px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f6689e;
+  border: 1px solid #f6689e;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;

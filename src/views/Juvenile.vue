@@ -21,3 +21,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.juvenile{
+
+  background-color:blueviolet;
+}
+
+</style>

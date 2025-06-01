@@ -10,7 +10,7 @@
 
 <script>
 // @ is an alias to /src
-import Baseboard from '@/components/Baseboard.vue'
+import Baseboard from '@/components/Baseboard.vue';
 import HeaderVue from '@/components/Header.vue'
 
 export default {

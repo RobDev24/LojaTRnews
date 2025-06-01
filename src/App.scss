@@ -1,6 +1,6 @@
 
-@import "~bootstrap/scss/bootstrap";
-@import './styles/variables';
+@use "~bootstrap/scss/bootstrap";
+@use './styles/variables' as *;
 
 body {
   background-color: #000;
