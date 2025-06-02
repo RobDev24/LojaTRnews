@@ -3,6 +3,7 @@
      <HelloWorld msg="Welcome "/>
     <baseboard/>
     <header-vue/>
+  
   <div class="home-secundary">
     
    
@@ -18,13 +19,15 @@ import Baseboard from '@/components/Baseboard.vue'
 import HeaderVue from '@/components/Header.vue'
 import HomeSliderVue from '@/components/HomeSlider.vue'
 
+
 export default {
   name: 'HoMe',
   components: {
     HelloWorld,
     Baseboard,
     HeaderVue,
-    HomeSliderVue
+    HomeSliderVue,
+    
   }
 }
 </script>

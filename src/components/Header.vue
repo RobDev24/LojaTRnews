@@ -3,6 +3,7 @@
         <img src="@/assets/IMG_4.jpg">
             <search/>
             <button-menu-vue/>
+            <registration-login-vue/>
                
     </div>
 </template>
@@ -11,12 +12,14 @@
 
 import Search from './Search.vue';
 import ButtonMenuVue from './ButtonMenu.vue'
+import RegistrationLoginVue from '@/components/RegistrationLogin.vue';
 
 export default{
     name:'HeaDer',
     components:{
         Search,
-        ButtonMenuVue
+        ButtonMenuVue,
+        RegistrationLoginVue
     }
 }
 
