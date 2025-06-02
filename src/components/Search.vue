@@ -4,7 +4,7 @@
          v-model="searchQuery" type="text" placeholder="pesquisar..." 
          @keyup.enter="handleSearch" />
 
-          <button @click="handleSearch" class="b-search">
+          <button  class="b-search">
       🔍
     </button>
     </div>
@@ -22,8 +22,8 @@ export default{
 .search{
     
     float: right;
-    margin-right: -330px;
-    
+    margin-right: 250px;
+    margin-top: 25px;
     
 }
 
