@@ -1,7 +1,7 @@
 <template>
     <div class="Juvenile">
         INFANTO JUVENIL
-
+     moda infanto
         <baseboard/>
         <header-vue/>
     </div>

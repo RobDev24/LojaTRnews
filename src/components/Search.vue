@@ -20,10 +20,11 @@ export default{
 
 <style>
 .search{
-    
     float: right;
-    margin-right: 250px;
-    margin-top: 25px;
+    margin-right: 256px;
+    margin-top: 10px;
+    border: 1px solid green;
+   width: 27%;
     
 }
 

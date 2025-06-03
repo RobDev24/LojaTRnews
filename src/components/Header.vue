@@ -3,7 +3,7 @@
         <img src="@/assets/IMG_4.jpg">
             <search/>
             <button-menu-vue/>
-            <registration-login-vue/>
+          
                
     </div>
 </template>
@@ -12,20 +12,27 @@
 
 import Search from './Search.vue';
 import ButtonMenuVue from './ButtonMenu.vue'
-import RegistrationLoginVue from '@/components/RegistrationLogin.vue';
 
 export default{
     name:'HeaDer',
     components:{
         Search,
         ButtonMenuVue,
-        RegistrationLoginVue
+        
     }
 }
 
 </script>
 
 <style scoped>
+.container{
+    width: 50%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 140px;
+    padding: 3px;
+}
+
 .header{
     position: fixed;
     top: 0;
