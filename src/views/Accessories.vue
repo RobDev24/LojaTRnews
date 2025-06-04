@@ -25,7 +25,6 @@ export default {
 <style scoped>
 
 .Accessories{
-  border: 2px red;
-  background-color: aqua;
+
 }
 </style>

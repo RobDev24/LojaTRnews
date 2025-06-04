@@ -1,9 +1,9 @@
 <template>
     <div class="header">
         <img src="@/assets/IMG_4.jpg">
-            <search/>
+            
             <button-menu-vue/>
-          
+            <search/>
                
     </div>
 </template>
@@ -26,10 +26,11 @@ export default{
 
 <style scoped>
 .container{
-    width: 50%;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 140px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-left: -1000px;
     padding: 3px;
 }
 
@@ -39,12 +40,14 @@ export default{
     left: 0;
     width: 100%;
     
+    
 }
 
 .h-menu{
     float: left;
    margin-left: 10px;
    margin-top: 30px;
+
       
 }
 .h-menu .menu{

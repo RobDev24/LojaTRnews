@@ -1,6 +1,7 @@
 <template>
     <div class="man">
         Homem
+        moda homem
 
         <baseboard/>
         <header-vue/>

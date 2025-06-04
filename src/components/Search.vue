@@ -20,11 +20,12 @@ export default{
 
 <style>
 .search{
-    float: right;
-    margin-right: 256px;
-    margin-top: 10px;
-    border: 1px solid green;
-   width: 27%;
+
+    margin-left: 630px;
+    margin-top:30px;
+   width: 45%;
+   height: auto;
+   padding: 5px;
     
 }
 
@@ -32,6 +33,7 @@ export default{
     border-radius: 50px;
     padding: 8.2px;
     width: 300px;
+    margin-left: -60px;
     text-align: center;
 }
 .b-search{

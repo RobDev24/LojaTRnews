@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="h-container">
 
 
     
@@ -10,23 +10,26 @@
               <b-button class="menu" to="/juvenile" pill variant="outline-secondary">Infanto/Juvenil</b-button>
               <b-button class="menu" to="/accessories" pill variant="outline-secondary">Acessórios</b-button>
               <b-button class="menu" to="/about" pill variant="outline-secondary">About</b-button>     
-                    
-                <nav> <b-button  class="cart-button" to="/cart">
-                             
+                
+              </div>
+
+              <div>
+              <nav> <b-button  class="cart-button" to="/cart">
+
     🛒
-    <!--<span v-if="cartItemCount > 0" class="cart-count">{{ cartItemCount }}</span>-->
+    <span v-if="cartItemCount > 0" class="cart-count">{{ cartItemCount }}</span>
   </b-button></nav>
 
-                 
-            
-            
-            </div>
+             </div>
+             
             <nav class="b-login" ><b-button class="login" to="/login"></b-button>
                 <p><router-link class="r-login" to="/login">Entre</router-link></p>
                 
                 </nav>
-
-        </div>    
+               <nav class="register" >Não tem cadastro? Cadastre-se<b-button class="b-register" to="/register" >AQUI</b-button> </nav>
+    
+              
+              </div>    
 
 </template>
 
@@ -38,34 +41,30 @@ export default{
 
 <style scoped>
 
-
-
 .h-menu{
-    
-   margin-left: -0px;
-   margin-right: -0px;
-   margin-top: -0px;
-   height: 40px;
-   width: 100%;
-   padding: 5px;
+  float: left;
+   margin-left: -18px;
+   margin-top: 40px;
+   height: 50px;
+   width: 560px;
+   
+   
    
       
 }
 .h-menu .menu{
+  margin-left: -14px;
+  margin-top: 15px;
+  border: none;
+  color: rgb(93, 82, 82);  
   background-color: transparent;
-    margin-right: 5px;
-    margin-left: 2px;
-    border: none;
-    text-decoration: solid 2px;
-    
-    }
+}
 
-    .h-menu .menu:hover{
-    background-color: transparent;
-    text-decoration: 2px solid;
-    
-    
-    }
+.h-menu .menu:hover{
+  color:aliceblue;
+  text-decoration:underline 2px;
+}
+  
 .b-cart{
     float: right;
     margin-right: 10px;
@@ -86,11 +85,10 @@ img{
 .cart-button {
   position: relative;
   float:right;
-  margin-right: -610px;
-  margin-top: -50px;
+  margin-right: 10px;
+  margin-top: 35px;
   background-color: #f6689e;
   border: 1px solid #f6689e;
-  padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 24px;
@@ -110,8 +108,8 @@ img{
 
 .b-login{
   float: right;
-  margin-right: -530px;
-  margin-top: -50px;
+  margin-right: 20px;
+  margin-top: 35px;
 }
 
 
@@ -125,12 +123,32 @@ img{
   
 }
 
+.b-login .login:hover{
+
+
+  
+}
+
 p .r-login{
 text-decoration: none;
-  color: rgb(247, 244, 239);
+  color:rgb(93, 82, 82) ;
 }
 .r-login:hover{
-  color: #b9b5b7;
+  color: rgb(247, 244, 239);
+  text-decoration: underline 2px;
 
+}
+.register{
+   float: right;
+   margin-top: 20px;
+   margin-right: 20px;
+   width: 150px;
+   height: 8;
+   padding: 5px;
+
+}
+ .register .b-register{
+  color: aliceblue;
+  
 }
 </style>
