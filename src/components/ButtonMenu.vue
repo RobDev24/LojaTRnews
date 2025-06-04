@@ -87,11 +87,15 @@ img{
   float:right;
   margin-right: 10px;
   margin-top: 35px;
-  background-color: #f6689e;
-  border: 1px solid #f6689e;
+  background-color: transparent;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
   font-size: 24px;
+}
+
+.cart-button:hover{
+  background-color: aliceblue;
 }
 
 
@@ -114,7 +118,7 @@ img{
 
 
 .login{
-  background-image: url('../assets/login.jpg');
+  background-image: url('../assets/login.jpg' );
   width: 55px;
   height: 55px;
   border-radius: 100px;
@@ -123,16 +127,11 @@ img{
   
 }
 
-.b-login .login:hover{
-
-
-  
-}
-
 p .r-login{
 text-decoration: none;
   color:rgb(93, 82, 82) ;
 }
+
 .r-login:hover{
   color: rgb(247, 244, 239);
   text-decoration: underline 2px;
@@ -148,7 +147,15 @@ text-decoration: none;
 
 }
  .register .b-register{
-  color: aliceblue;
+  color:rgb(93, 82, 82);
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
   
-}
+  }
+  .register .b-register:hover{
+    color: aliceblue;
+    text-decoration: underline;
+  }
+
 </style>

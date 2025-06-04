@@ -1,14 +1,23 @@
 <template>
          <div class="register">
               
-              <p><router-link class="cadastro" to="/">Cadatre-se</router-link></p>
-
+              Area de cadastro de clientes
+          <header-vue/>
+          <baseboard-vue/>
             </div>
 </template>
 
 <script>
+import HeaderVue from '@/components/Header.vue'
+import BaseboardVue from '@/components/Baseboard.vue'
+
 export default{
-    name:'ReGister'
+    name:'ReGister',
+    
+    components:{
+      HeaderVue,
+      BaseboardVue
+    }
 }
 
 </script>
