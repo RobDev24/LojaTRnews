@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Aqui será a sessão de ajuda</h1>
 
     <baseboard/>
     <headerVue/>
@@ -14,7 +14,7 @@ import Baseboard from '@/components/Baseboard.vue';
 import HeaderVue from '@/components/Header.vue'
 
 export default {
-  name: 'AboutView',
+  name: 'HelpMe',
   components: {
     Baseboard,
     HeaderVue

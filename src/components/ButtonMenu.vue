@@ -1,36 +1,33 @@
 <template>
   <div class="h-container">
 
-
-    
-<div class="h-menu">
+     <div class="h-menu">
               <b-button class="menu" to="/" pill variant="outline-secondary">Inicio</b-button>
               <b-button class="menu" to="/woman" pill variant="outline-secondary">Feminino</b-button> 
               <b-button class="menu" to="/man" pill variant="outline-secondary">Masculino</b-button>
               <b-button class="menu" to="/juvenile" pill variant="outline-secondary">Infanto/Juvenil</b-button>
               <b-button class="menu" to="/accessories" pill variant="outline-secondary">Acessórios</b-button>
-              <b-button class="menu" to="/about" pill variant="outline-secondary">About</b-button>     
+                  
                 
-              </div>
+       </div>
 
-              <div>
-              <nav> <b-button  class="cart-button" to="/cart">
-
-    🛒
-    <span v-if="cartItemCount > 0" class="cart-count">{{ cartItemCount }}</span>
-  </b-button></nav>
-
-             </div>
-             
-            <nav class="b-login" ><b-button class="login" to="/login"></b-button>
-                <p><router-link class="r-login" to="/login">Entre</router-link></p>
-                
-                </nav>
-               <nav class="register" >Não tem cadastro? Cadastre-se<b-button class="b-register" to="/register" >AQUI</b-button> </nav>
-    
               
-              </div>    
+              <div class="search">
+                <b-button class="b-search" to="/search" >Pesquisa</b-button>
+               </div>
 
+                <div class="s-custumer">
+
+                  <b-button class="b-register" to="/login" >Iniciar Sessão</b-button>
+                  <b-button class="b-help" to="/Help">Ajuda</b-button>
+                  <b-button  class="cart-button" to="/cart">
+                         Cesto[0]    
+                   <span v-if="cartItemCount > 0" class="cart-count">{{ cartItemCount }}</span>
+                    </b-button>
+                </div>
+                               
+          </div>
+              
 </template>
 
 <script>
@@ -64,17 +61,30 @@ export default{
   color:aliceblue;
   text-decoration:underline 2px;
 }
+
+.search{
+  float: right;
+  width:150px;
+  height: 40px;
+   margin-top: 80px;
+  margin-left: -700px;
+  margin-right: 500px;
   
-.b-cart{
-    float: right;
-    margin-right: 10px;
-    
-    
- }
- .b-cart .menu{
-    color: aliceblue;
-    
- }
+}
+
+.search .b-search{
+  background-color:transparent;
+  border: none;
+  color: rgb(93, 82, 82); 
+  text-decoration: underline;
+
+}
+
+.search .b-search:hover{
+  color: aliceblue;
+  text-decoration: underline;
+}
+  
 img{
    border-radius: 100px;
    float: left;
@@ -82,68 +92,74 @@ img{
    margin-top: -10px;
 }
 
+.s-custumer{
+  float: right;
+  height: 50px;
+  width: 400px;
+  margin-top: 50px;
+  margin-right: 80px;
+  padding: 5px;
+}
+
+.s-custumer .b-help{
+  margin-left: 15px;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: rgb(93, 82, 82);
+}
+
+    .s-custumer .b-register{
+       background-color: transparent;
+       border: none;
+       text-decoration: underline;
+       color: rgb(93, 82, 82);
+    }
+    .s-custumer .b-help:hover{
+      color: aliceblue;
+    }
+    .s-custumer .b-register:hover{
+      color: aliceblue;
+    }
+
 .cart-button {
   position: relative;
   float:right;
   margin-right: 10px;
-  margin-top: 35px;
+  margin-left: -100px;
+  margin-top: 0px;
   background-color: transparent;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 15px;
+  color: rgb(93, 82, 82); 
 }
 
 .cart-button:hover{
-  background-color: aliceblue;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 
 .cart-count {
   position: absolute;
+  background: transparent;
   top: -5px;
   right: 2px;
-  background: red;
-  color: white;
+  color: rgb(93, 82, 82); 
   border-radius: 50%;
   padding: 2px 6px;
   font-size: 12px;
 }
 
-.b-login{
-  float: right;
-  margin-right: 20px;
-  margin-top: 35px;
-}
 
 
-.login{
-  background-image: url('../assets/login.jpg' );
-  width: 55px;
-  height: 55px;
-  border-radius: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-}
 
-p .r-login{
-text-decoration: none;
-  color:rgb(93, 82, 82) ;
-}
 
-.r-login:hover{
-  color: rgb(247, 244, 239);
-  text-decoration: underline 2px;
 
-}
 .register{
-   float: right;
-   margin-top: 20px;
-   margin-right: 20px;
-   width: 150px;
-   height: 8;
-   padding: 5px;
+   
 
 }
  .register .b-register{

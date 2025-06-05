@@ -1,6 +1,6 @@
 <template>
     <div class="login">
-        Login de clientes Login de clientes Login de clientes 
+    Cliente login ou ir para cadastro
         <header-vue/>
         <baseboard-vue/>
     </div>

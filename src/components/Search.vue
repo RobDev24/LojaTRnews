@@ -30,6 +30,7 @@ export default{
 }
 
 .search input{
+
     border-radius: 50px;
     padding: 8.2px;
     width: 300px;
